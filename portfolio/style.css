@@ -1,0 +1,322 @@
+body {
+	font-family: 'Abel', sans-serif;
+	/*-webkit-transition: .25s ease-in-out;
+   -moz-transition: .25s ease-in-out;
+   -o-transition: .25s ease-in-out;
+   transition: .25s ease-in-out;*/
+}
+
+header { 
+	width: 100%; 
+	background-color: #222222; 
+	float: left; 
+}
+
+nav { 
+	float: right; 
+	margin-top: 5px;
+
+}
+
+nav ul li { 
+	float: left; 
+}
+
+nav li {
+	display:inline-block;
+	margin-left: 10px;
+	margin-top: 5px;
+	font-size: 1.2em;
+
+}
+
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+/* Toggled State */
+input[type=checkbox]:checked ~ #menu_content {
+   height:80px !important;   
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: #ccc !important;
+}
+
+a:visited {
+	color: white;
+}
+
+
+/* Menu / Logo */
+#menu_content {
+	transition:height .3s;
+   height:0px;
+   float:right;
+   background-color: #222222;
+   width:100%;
+   text-align: justify !important;
+   overflow: hidden !important;
+}
+
+
+#menu_content ul {
+	list-style-type: none;
+	padding-left:0;
+}
+
+.mobiel_logo {
+	display:none;
+	float:right;
+	margin-top:12px;
+}
+
+.menu_logo { 
+	height:70px; 
+}
+
+.fa {
+	color:#ccc;
+}
+
+.fa-3x {
+	color:#ccc;
+}
+
+hr {
+	border:black !important;
+}
+
+/* Header */
+#header_container {
+	width:100%;
+	height:500px;
+}
+
+#header_image {
+	overflow: hidden;
+	background-image: url(images/skyline_header.png);
+	height:500px;
+	width:100%;
+	background-position: center;
+	border-bottom: 5px solid #222222;
+	float:left;
+}
+
+#header_face {
+	background-image: url(images/face1.png);
+	height:200px;
+	width:auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#header_tekst h1 {
+	text-align: center;
+	margin:0 auto;
+	font-size: 6em;
+	width:100%;
+	color:white;
+	line-height: 80px;
+	text-shadow:0px 0px  30px black;
+}
+
+#header_tekst h2 {
+	text-align: center;
+	margin:0 auto;
+	font-size: 4em;
+	width:100%;
+	color:white;
+	margin-top:0;
+	text-shadow:0px 0px  30px black;
+}
+
+.icon_container {
+	float:left;
+	width:100%;
+	height:150px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 150px;
+	transition: 0.4s all;
+}
+
+#form_icon {
+	background-image: url(images/form_icon.png);
+}
+
+#form_icon:hover {
+	background-image: url(images/form_icon1.png);	
+}
+
+#website_icon {
+	background-image: url(images/website_icon.png);
+}
+
+#website_icon:hover {
+	background-image: url(images/website_icon1.png);
+}
+
+#cms_icon {
+	background-image: url(images/cms_icon.png);
+}
+
+#cms_icon:hover {
+	background-image: url(images/cms_icon1.png );
+}
+
+
+/* Font */
+
+h3 {
+	text-align: center;
+	margin:0 auto;
+	font-size: 1.6em;
+	width:100%;
+	color:black;
+	line-height: 60px;
+	text-transform: uppercase;
+}
+
+p {
+	text-align: center;
+	margin:0 auto;
+	font-size: 1em;
+	width:100%;
+	color:black;
+	margin-top:0;
+	margin-bottom:10px;
+}
+
+/* Biografie */
+
+#content_biografie {
+	width: 100%; 
+	background-color: white; 
+	float: left; 
+}
+
+.about {
+	padding-top: 30px;
+}
+
+
+/* Projects */
+
+
+#content_projects {
+	width: 100%; 
+	background-color: white; 
+	float: left; 
+	padding-top: 50px;
+}
+
+.project_image {
+	width:100%;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+
+
+
+/* Contact */
+
+#content_contact {
+	width: 100%; 
+	background-color: white; 
+	float: left; 
+}
+
+#image_contact {
+	padding:20px 0;
+}
+
+
+
+/* Media Responsive */
+@media all and (max-width: 1000px) {
+	h3, p {
+		font-size: 2em !important;
+		width:80% !important;
+		margin-left: 10% !important;
+		margin-right: 10% !important;
+	}
+
+	#content_projecten p {
+		font-size: 1.3em !important;
+	}
+	.downloadbutton {
+		width:200px;
+	}
+}
+
+@media all and (max-width: 600px) {
+	nav {
+		display: none;
+	}
+
+	.mobiel_logo {
+		display:block;
+	}
+
+	#header_face {
+		display: none;
+	}
+
+	#header_container {
+		height:300px;
+	}
+
+	#header_image {
+		height:300px;
+	}
+
+	#header_tekst h1, h2 {
+		width:100% !important;
+		font-size:4em;
+		margin-top:60px;
+	}
+
+	h3, p {
+		font-size: 1em !important;
+		width:97% !important;
+		margin-left: 1.5% !important;
+		margin-right: 1.5% !important;
+	}
+}
+
+
+@media all and (max-width: 420px) {
+	#header_tekst h1, h2 {
+		font-size: 2em !important;
+		margin-top: 70px;
+	}
+
+	h3, p {
+		font-size: 0.9em !important;
+		width:97% !important;
+		margin-left: 1.5% !important;
+		margin-right: 1.5% !important;
+	}
+}
+
+
+.bar {
+
+	background-color:#2f2f2f;
+	color:white !important;
+}
+.bar h1 {
+	padding-top:20px;
+	padding-bottom:20px;
+	float:left;
+}
